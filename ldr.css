@@ -1,0 +1,84 @@
+/* Fundo preto para o corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    height: 110px;
+    background-color: #000; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Carrossel */
+.carousel-item img {
+    height: 350px; 
+    object-fit: cover;
+}
+.carousel-caption h5 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.card {
+    border-radius: 12px; 
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2); 
+    height: 450px; /* Aumenta ainda mais o tamanho dos cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Amplia levemente o card ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4); /* Sombra mais forte no hover */
+}
+
+.card img {
+    height: 250px; /* Aumenta a altura das imagens no card */
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.6rem; /* Título maior */
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.1rem; /* Texto um pouco maior */
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Container principal */
+.container {
+    margin-top: 20px;
+}
+
+/* Layout responsivo */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 250px; /* Ajuste de altura para telas menores */
+    }
+
+    .card {
+        height: auto; /* Ajusta altura em telas pequenas */
+    }
+
+    .card img {
+        height: 150px;
+    }
+}
